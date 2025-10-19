@@ -1,0 +1,67 @@
+// BASIC DRUM BEATS
+
+// stack(
+//   s("hh hh hh hh "),
+//   s("~ sd"),
+//   s("bd")
+// )
+
+// stack(
+//   s("hh hh hh hh "),
+//   s("~ sd"),
+//   s("bd bd ~ ~")
+// )
+
+// stack(
+//   s("hh hh hh hh hh hh hh hh"),
+//   s("bd sd")
+// )
+
+
+// stack(
+//   s("hh hh hh hh"),
+//   s("bd ~ sd ~ bd bd ~ sd")
+// ) 
+
+// BREAD AND BUTTER BEAT
+// stack(
+//   s("hh*8"),
+//   s("bd ~ ~ ~ bd bd ~ ~"),
+//   s("~ ~ sd ~ ~ ~ sd ~")
+// ).slow(2)
+
+// same as below:
+ // s("[hh hh hh hh hh hh hh hh, bd ~ ~ ~ bd bd ~ ~, ~ ~ sd ~ ~ ~ sd ~]").slow(2)
+
+// BIG BELL BOUNCE BEAT
+// stack(
+//   // s("~ cb ~ cb ~ cb ~ cb"),
+//   s("bd ~ ~ ~ bd ~ ~ ~"),
+//   s("~ ~ sd ~ ~ ~ sd ~"),  
+//   // s("~ cb ~ cb ~ cb ~ cb") 
+//   s("cb").struct("0 1 0 1 0 1 0 1")
+// )
+// stack(
+//   // s("~ cb ~ cb ~ cb ~ cb"),
+//   s("bd ~ ~ ~ bd bd ~ ~"),   // kick
+//   s("~ ~ sd ~ ~ ~ sd ~"),   // snare
+//   s("~ cb ~ cb ~ cb ~ cb")  // ride bell on upbeats
+// )
+
+// HI HAT SNARE ON 2 AND 4
+// stack(
+//   s("hh*16"),
+//   s("hh*4").gain(3),
+//   s("bd(4,16)"),
+//   s("sd(2,4)")
+// ).slow(1.5)
+  // s("~ ~ ~ ~ sd ~ ~ ~ ~ ~ ~ ~ sd ~ ~ ~")
+  // s("bd ~ ~ ~ bd ~ ~ ~ bd ~ ~ ~ bd ~ ~ ~")
+
+
+// 2 BEAT
+// stack(
+//   s("oh*4"),
+//   s("bd*2"),
+//   s("~ sd ~ sd")
+// )
